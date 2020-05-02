@@ -28,15 +28,15 @@
 ## Part 2: Optimized Implementation (0.4365ms) ~21% improvement
 	My final implentation includes a number of small optimizations:
 	- Replacing the while loop with a do-while, to reduce the number of
-		necessary checks.
+	  necessary checks.
 	- Bit-shifting instead of using regular multiplication.
 	- Incrementing a pointer to the 'lines' and 'nums' arrays, instead of
-		indexing each time.
+	  indexing each time.
 	- Initializing 'val' with the first value of 'line' instead of 0, saving
-		a loop, and effectively cutting down the cost of the while loop by ~1/5.
-		(Depending on the size of the value being converted)
+	  a loop, and effectively cutting down the cost of the while loop by ~1/5.
+	  (Depending on the size of the value being converted)
 	- Initializing 'val' and 'line' outside of the for-loop, to avoid 
-		reinitialization.
+	  reinitialization.
 
 	Somewhere along the way, I began minimizing the size of the code, instead
 	of its runtime, so while it looks very neat (unreadable), it hasn't reached
